@@ -1,0 +1,7 @@
+{
+  "entrypoint": "index.html",
+  "shell": "src/jouley-app.html",
+  "fragments": [
+    "src/views/jouley-library-view.html"
+  ]
+}

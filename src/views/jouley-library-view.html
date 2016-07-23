@@ -1,0 +1,92 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="jouley-library-view">
+
+  <template>
+
+    <style>
+      :host {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 32px;
+      }
+      .content {
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        padding: 16px 0;
+        text-align: left;
+        border-radius: 5px;
+        background-color: #f5f5f5;
+        color: #757575;
+        max-width: 1856px;
+      }
+      .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 16px 10px 16px;
+      }
+      h1 {
+        font-size: 22px;
+        margin: 0;
+        color: #212121;
+        height: 36px;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+        text-indent: 8px;
+        padding: 0;
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      [data="title"] {
+        width: 42%;
+      }
+      [data="artist"] {
+        width: 32%;
+      }
+      [data="album"] {
+        width: 26%;
+      }
+    </style>
+
+    <div class="content">
+      <div class="header">
+        <h1 data="title">
+          name
+        </h1>
+        <h1 data="artist">
+          artist
+        </h1>
+        <h1 data="album">
+          album
+        </h1>
+      </div>
+    </div>
+
+  </template>
+
+  <script>
+
+    Polymer({
+
+      is: 'jouley-library-view'
+
+    });
+
+  </script>
+
+</dom-module>
